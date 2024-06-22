@@ -8,9 +8,6 @@ ArduinoLogPy — это проект для чтения данных с Arduino
 
 docker build -t arduino-log-app .
 
-shell
-Copy code
-
 ## Запуск Docker-контейнера
 
 Для запуска Docker-контейнера выполните следующую команду:
