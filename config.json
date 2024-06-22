@@ -1,0 +1,11 @@
+{
+    "serial_port": "/dev/ttyUSB0",
+    "serial_baudrate": 9600,
+    "db": {
+        "user": "rackot",
+        "password": "arduinologdb",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "name": "arduinologdb"
+    }
+}

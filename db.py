@@ -1,14 +1,14 @@
 import psycopg2
 from psycopg2 import sql
 
-def connect_to_postgresql(user, password, host, port, dbname):
+def connect_to_postgresql(config):
     try:
         connection = psycopg2.connect(
-            user=user,
-            password=password,
-            host=host,
-            port=port,
-            dbname=dbname
+            user=config["db"]["user"],
+            password=config["db"]["password"],
+            host=config["db"]["host"],
+            port=config["db"]["port"],
+            dbname=config["db"]["name"]
         )
         cursor = connection.cursor()
         return connection, cursor
