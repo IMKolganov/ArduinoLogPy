@@ -20,12 +20,25 @@ sudo docker run -it --rm --network="host" --device=/dev/ttyUSB0:/dev/ttyUSB0 ard
 ## Структура проекта
 
 ArduinoLogPy/
+
 ├── app.py
+
 ├── arduinoCore.py
+
 ├── db.py
+
 ├── requirements.txt
+
 ├── config.json
+
 └── Dockerfile
+
+app.py — основной скрипт для запуска приложения.
+arduinoCore.py — модуль для работы с Arduino.
+db.py — модуль для работы с базой данных PostgreSQL.
+requirements.txt — файл с зависимостями Python.
+config.json — файл конфигурации.
+Dockerfile — Dockerfile для создания Docker-образа.
 
 ## Требования
 
@@ -49,10 +62,3 @@ ArduinoLogPy/
     "name": "your_db_name"
   }
 }
-
-app.py — основной скрипт для запуска приложения.
-arduinoCore.py — модуль для работы с Arduino.
-db.py — модуль для работы с базой данных PostgreSQL.
-requirements.txt — файл с зависимостями Python.
-config.json — файл конфигурации.
-Dockerfile — Dockerfile для создания Docker-образа.
