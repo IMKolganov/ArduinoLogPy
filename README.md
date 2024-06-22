@@ -17,6 +17,15 @@ Copy code
 
 sudo docker run -it --rm --network="host" --device=/dev/ttyUSB0:/dev/ttyUSB0 arduino-log-app
 
+## Структура проекта
+
+ArduinoLogPy/
+├── app.py
+├── arduinoCore.py
+├── db.py
+├── requirements.txt
+├── config.json
+└── Dockerfile
 
 ## Требования
 
@@ -40,15 +49,6 @@ sudo docker run -it --rm --network="host" --device=/dev/ttyUSB0:/dev/ttyUSB0 ard
     "name": "your_db_name"
   }
 }
-Структура проекта
-
-ArduinoLogPy/
-├── app.py
-├── arduinoCore.py
-├── db.py
-├── requirements.txt
-├── config.json
-└── Dockerfile
 
 app.py — основной скрипт для запуска приложения.
 arduinoCore.py — модуль для работы с Arduino.
