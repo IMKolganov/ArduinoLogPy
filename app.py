@@ -2,8 +2,6 @@
 
 import json
 import serial
-import psycopg2
-import db
 import os
 import initializeApp
 import arduinoCore
@@ -13,7 +11,7 @@ with open('config.json', 'r') as f:
     config = json.load(f)
 
 if __name__ == "__main__":
-    ser, connection, cursor = initializeApp.initializeApp(config)
+    ser = initializeApp.initializeApp(config)
     arduinoCore.read_serial_and_insert_data(ser, config)
 
 #docker build -t arduino-log-app .
