@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/rackot/myproject/ArduinoLogDBPy/myenv"
+set -gx VIRTUAL_ENV "/home/rackot/myproject/ArduinoLogPy/myenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

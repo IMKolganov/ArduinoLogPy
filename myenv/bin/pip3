@@ -1,4 +1,4 @@
-#!/home/rackot/myproject/ArduinoLogDBPy/myenv/bin/python3
+#!/home/rackot/myproject/ArduinoLogPy/myenv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

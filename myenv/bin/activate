@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/rackot/myproject/ArduinoLogDBPy/myenv"
+VIRTUAL_ENV="/home/rackot/myproject/ArduinoLogPy/myenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

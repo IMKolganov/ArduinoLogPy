@@ -14,7 +14,7 @@ with open('config.json', 'r') as f:
 
 if __name__ == "__main__":
     ser, connection, cursor = initializeApp.initializeApp(config)
-    arduinoCore.read_serial_and_insert_data(ser, connection, cursor)
+    arduinoCore.read_serial_and_insert_data(ser, config)
 
 #docker build -t arduino-log-app .
 #запуск контейнера
